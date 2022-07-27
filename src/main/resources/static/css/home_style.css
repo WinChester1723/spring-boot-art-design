@@ -1,0 +1,136 @@
+body{
+    background-image: url('../images/bodyBack.jpg');
+    font-family: sans-serif;
+}
+#h2_head{
+    position: center;
+    text-align: center;
+}
+/*---------------menu-----------------*/
+#head{
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/*------------------------------finish menu-----------------------------*/
+._96Gt2 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: inherit;
+}
+._3WLB1 ._1ldaI:not(:focus):not(:active):not(:focus-within) {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    white-space: nowrap;
+    text-align: right;
+}
+._12ySI {
+    background: transparent;
+    height: auto;
+    padding: 13px 30px;
+}
+._3S2ce {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    background-size: 120% 100%;
+    background-position: 90% 0;
+    border-radius: 0;
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+}
+

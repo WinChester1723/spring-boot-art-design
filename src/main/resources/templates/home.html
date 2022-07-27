@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home_style.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="root">
+<!--  start eto navigatsionniy otdel-->
+    <header id="head">
+<!--        tut nado dobavit ssilki-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand">
+<!--                tut nado podumat nad etim menu -->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="home.html">Home</a>
+                        <a href="topics.html">Topics</a>
+                        <a href="clients.html">Clients</a>
+                        <a href="contacts.html">Contact</a>
+                        <a href="group.html">Group</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            </a>
+<!--                etot menu aj do suda idet-->
+            <ul class="navbar-nav" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="artist.html">Artist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="join.html"><span class="_96Gt2">Join</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><span class="_96Gt2">LogIn</span></a>
+                </li>
+            </ul>
+<!--tut nado sozdat user menu i vse takoe-->
+            <a>
+                <button type="button" class="_3S2ce _12ySI _1ldaI" style="color: aliceblue">User Menu</button>
+            </a>
+        </nav>
+<!--        zdes create delayu carousel bar-->
+
+
+
+<!--        otsuda nacnetsa collection artov-->
+        <div>
+            <div class="container-fluid" style="margin-top:80px">
+                <h3 id="h2_head" style="color: aliceblue">Collections</h3>
+            </div>
+        </div>
+    </header>
+<!--end navigation bar-->
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/home_func.js"></script>
+</body>
+</html>

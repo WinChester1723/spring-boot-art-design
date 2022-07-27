@@ -4,11 +4,166 @@
     <meta charset="UTF-8">
     <title>Home Page Arts</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
 
+<!------------------------------------------------NAVBAR------------------------------------------------------------------>
+<header>
+    <nav class="navbar" id="nav_head">
+        <a href="" style="float:left" >Artist</a>
+        <a href="#projects" class="invisible-nav-item">Projects</a>
+        <a href="#about"  class="invisible-nav-item">About</a>
+        <a href="#contact" class="invisible-nav-item">Contact</a>
+        <a href="" class="invisible-nav-item" id="a_join">Join</a>
+        <a href="" class="invisible-nav-item" id="a_registr">Registration</a>
+    </nav>
+</header>
 
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+</ul>
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="/images/arts/vladimir-manyukhin-.jpg" width="450" height="150">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/arts/hain-chiaki-yor-forger-fanart.jpg" width="450" height="150">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/arts/margaux-valonia-snk-2-a4.jpg" width="450" height="150">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/arts/vladimir-manyukhin-dark-ages.jpg" width="450" height="150">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/arts/wlop-38se.jpg" width="450" height="150">
+    </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</a>
+</div>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------->
+<div class="container container1"></div>
+
+<!----------------------------------------PROJECTS----------------------------------------------------------------------------->
+<div class="container container2" id="projects">
+    <p class="heading">Projects</p>
+    <hr style="width:100%;color:grey">
+    <div class="image-collection">
+        <div>
+            <span>Summer House</span>
+            <img src="/images/arts/n-i-x-e-u-v-ra.jpg" alt="" width="75%" >
+        </div>
+        <div>
+            <span>Renovated</span>
+            <img src="/images/arts/v-i-y-l-n-e-noel.jpg" alt="" width="110%" >
+        </div>
+        <div>
+            <span>Brick House</span>
+            <img src="/images/arts/gianluca-rolli-sailormoon.jpg" alt="" width="100%" >
+        </div>
+
+        <div>
+            <span>Renovated</span>
+            <img src="/images/arts/anato-finnstark-the-memorial-berserk-by-anatofinnstark-ddbi355-fullview.jpg" alt="" width="100%" >
+        </div>
+        <div>
+            <span>Brick House</span>
+            <img src="/images/arts/n-i-x-e-u-yor-rose-tt.jpg" alt="" width="100%" >
+        </div>
+        <div>
+            <span>Summer House</span>
+            <img src="/images/arts/gianluca-rolli-8.jpg" alt="" width="100%" >
+        </div>
+        <div>
+            <span>Brick House</span>
+            <img src="/images/arts/jason-lan-yor-a.jpg" alt="" width="100%" >
+        </div>
+        <div>
+            <span>Summer House</span>
+            <img src="/images/arts/ari-ibarra-griffith.jpg" alt="" width="100%">
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------------ABOUT-------------------------------------------------------------->
+<div class="container container3" id="about">
+    <p class="heading">About</p>
+    <hr style="width:100%;color:grey;margin-bottom:10px">
+    <p style="margin:10px;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="image-card-collection">
+        <div class="about-img-card">
+            <img src="/images/arts/v-i-y-l-n-e-noel.jpg" alt="" width="100%">
+            <p class="heading">John Doe</p>
+            <p class="about-image-card-designation">CEO & Founder</p>
+            <p class="about-image-card-desc">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button class="about-image-card-button">CONTACT</button>
+        </div>
+        <div class="about-img-card">
+            <img src="/images/arts/max-hay-render-may-4th-2022-edit-v2-01.jpg" alt="" width="100%">
+            <p class="heading">Jane Doe</p>
+            <p class="about-image-card-designation">Architect</p>
+            <p class="about-image-card-desc">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button class="about-image-card-button">CONTACT</button>
+        </div>
+        <div class="about-img-card">
+            <img src="/images/arts/furio-tedeschi-zagan1s.jpg" alt="" width="100%">
+            <p class="heading">Mike Ross</p>
+            <p class="about-image-card-designation">Architect</p>
+            <p class="about-image-card-desc">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button class="about-image-card-button">CONTACT</button>
+        </div>
+        <div class="about-img-card">
+            <img src="/images/arts/dmitry-prozorov-moonlight.jpg" alt="" width="100%">
+            <p class="heading">Dan Star</p>
+            <p class="about-image-card-designation">Architect</p>
+            <p class="about-image-card-desc">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button class="about-image-card-button">CONTACT</button>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------CONTACT------------------------------------------------------------------------>
+<div class="container container4" id="contact">
+    <p class="heading">Contact</p>
+    <hr style="width:100%;color:grey;margin-bottom:10px">
+    <p style="margin:10px;font-size:16px;">Lets get in touch and talk about your next project.</p>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Subject" required>
+    <input type="text" placeholder="Comment" required>
+    <button class="contact-button">SEND MESSAGE</button>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<div class="container container5"></div>
+
+<!-----------------------------------------FOOTER--------------------------------------------------------------------------------->
+<footer class="footer">Made by ❤JugeshRaghav</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
