@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/test_style.css}">
-    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{../css/test_style.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <!-- Popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<!--nacalo nav stroka v stranitse-->
+<div id="navbar">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html">About</a>
+        <a href="clients.html">Clients</a>
+        <a href="topics.html">Topics</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+    <a href="#default" id="logo">
+        <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
+    </a>
+    <div id="navbar-right">
+        <a href="artist.html">Artist</a>
+        <a href="join.html">Join</a>
+        <a class="active" href="login.html">Login</a>
+    </div>
+</div>
 
+<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+    <div id="carousel_bar">
+        <h2>Collections</h2>
+    </div>
 
+    <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
+    <p>Scroll down this frame to see the effect!</p>
+    <p>Scroll to the top to remove the effect.</p>
+    <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" th:src="@{../js/test_func.js}"></script>
 </body>
 </html>

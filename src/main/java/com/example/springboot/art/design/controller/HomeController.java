@@ -13,10 +13,6 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/testHome")
-    public String testHome(){
-        return "home_page";
-    }
 
     @GetMapping("/test")
     public String test(){

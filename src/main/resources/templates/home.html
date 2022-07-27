@@ -2,68 +2,50 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Art Page</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/css/home_style.css}">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../css/test_style.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<!--nacalo nav stroka v stranitse-->
+<div id="navbar">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html">About</a>
+        <a href="clients.html">Clients</a>
+        <a href="topics.html">Topics</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+    <a href="#default" id="logo">
+        <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
+    </a>
+    <div id="navbar-right">
+        <a href="artist.html">Artist</a>
+        <a href="join.html">Join</a>
+        <a class="active" href="login.html">Login</a>
+    </div>
+</div>
 
-<div id="root">
-<!--  start eto navigatsionniy otdel-->
-    <header id="head">
-<!--        tut nado dobavit ssilki-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand">
-<!--                tut nado podumat nad etim menu -->
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="home.html">Home</a>
-                        <a href="topics.html">Topics</a>
-                        <a href="clients.html">Clients</a>
-                        <a href="contacts.html">Contact</a>
-                        <a href="group.html">Group</a>
-                        <a href="about.html">About</a>
-                    </div>
-                </div>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-            </a>
-<!--                etot menu aj do suda idet-->
-            <ul class="navbar-nav" id="navbar">
-                <li class="nav-item">
-                    <a class="nav-link" href="artist.html">Artist</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="join.html"><span class="_96Gt2">Join</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html"><span class="_96Gt2">LogIn</span></a>
-                </li>
-            </ul>
-<!--tut nado sozdat user menu i vse takoe-->
-            <a>
-                <button type="button" class="_3S2ce _12ySI _1ldaI" style="color: aliceblue">User Menu</button>
-            </a>
-        </nav>
-<!--        zdes create delayu carousel bar-->
+<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+    <div id="carousel_bar">
+        <h2>Collections</h2>
+    </div>
 
-
-
-<!--        otsuda nacnetsa collection artov-->
-        <div>
-            <div class="container-fluid" style="margin-top:80px">
-                <h3 id="h2_head" style="color: aliceblue">Collections</h3>
-            </div>
-        </div>
-    </header>
-<!--end navigation bar-->
-
+    <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
+    <p>Scroll down this frame to see the effect!</p>
+    <p>Scroll to the top to remove the effect.</p>
+    <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
+    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="/static/js/home_func.js"></script>
+<script type="text/javascript" th:src="@{../js/test_func.js}"></script>
 </body>
 </html>
