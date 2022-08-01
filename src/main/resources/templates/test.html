@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 <!--nacalo nav stroka v stranitse-->
@@ -23,13 +25,19 @@
         <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
     </a>
     <div id="navbar-right">
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit" style="color: aliceblue;background-color: #818181">Submit</button>
+            </form>
+        </div>
         <a href="artist.html">Artist</a>
         <a href="join.html">Join</a>
         <a class="active" href="login.html">Login</a>
     </div>
 </div>
 <!--finish navbar-->
-<div style="margin-top:110px;font-size:25px;margin-bottom:210px">
+<div style="margin-top:110px;font-size:25px;margin-bottom:210px;color: aliceblue">
 
     <div id="carousel_bar" style=";padding:15px 15px 5px">
         <h2>Collections</h2>
@@ -42,7 +50,8 @@
                     <div class="panel panel-default">
                         <div class="panel-thumbnail">
                             <a href="#" title="image 1" class="thumb">
-                                <img class="img-fluid mx-auto d-block" src="/images/arts/helena-nikulina-leaves-from-the-vine.jpg" alt="slide 1">
+                                <img class="img-fluid mx-auto d-block"
+                                     src="/images/arts/helena-nikulina-leaves-from-the-vine.jpg" alt="slide 1">
                             </a>
                         </div>
                     </div>
@@ -69,7 +78,8 @@
                     <div class="panel panel-default">
                         <div class="panel-thumbnail">
                             <a href="#" title="image 5" class="thumb">
-                                <img class="img-fluid mx-auto d-block" src="/images/arts/hain-chiaki-yor-forger-fanart.jpg" alt="slide 4">
+                                <img class="img-fluid mx-auto d-block"
+                                     src="/images/arts/hain-chiaki-yor-forger-fanart.jpg" alt="slide 4">
                             </a>
                         </div>
                     </div>
@@ -78,7 +88,8 @@
                     <div class="panel panel-default">
                         <div class="panel-thumbnail">
                             <a href="#" title="image 6" class="thumb">
-                                <img class="img-fluid mx-auto d-block" src="/images/arts/v-i-y-l-n-e-noel.jpg" alt="slide 5">
+                                <img class="img-fluid mx-auto d-block" src="/images/arts/v-i-y-l-n-e-noel.jpg"
+                                     alt="slide 5">
                             </a>
                         </div>
                     </div>
@@ -96,7 +107,8 @@
                     <div class="panel panel-default">
                         <div class="panel-thumbnail">
                             <a href="#" title="image 8" class="thumb">
-                                <img class="img-fluid mx-auto d-block" src="/images/arts/dannylailai-.jpg" alt="slide 7">
+                                <img class="img-fluid mx-auto d-block" src="/images/arts/dannylailai-.jpg"
+                                     alt="slide 7">
                             </a>
                         </div>
                     </div>
@@ -105,7 +117,8 @@
                     <div class="panel panel-default">
                         <div class="panel-thumbnail">
                             <a href="#" title="image 2" class="thumb">
-                                <img class="img-fluid mx-auto d-block" src="/images/arts/dannylailai-%20(2).jpg" alt="slide 8">
+                                <img class="img-fluid mx-auto d-block" src="/images/arts/dannylailai-%20(2).jpg"
+                                     alt="slide 8">
                             </a>
                         </div>
 
@@ -125,17 +138,6 @@
     <br>
     <br>
     <!--    finish carousel-->
-
-    <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
-    <p>Scroll down this frame to see the effect!</p>
-    <p>Scroll to the top to remove the effect.</p>
-    <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
-    <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.</p>
-
     <!--start art table fck-->
     <div class="header" style=";padding:15px 15px 5px">
         <h1>Recent Arts</h1>
@@ -184,7 +186,15 @@
 
 </div>
 
-
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+    </div>
+    <span>Art Design Blog Page</span>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" th:src="@{../js/test_func.js}"></script>
 </body>
