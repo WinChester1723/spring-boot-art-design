@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+    id: createTable-user_info
+    author: Ibrahim-Abdullazade
+    changes:
+      - createTable:
+          tableName: user_info
+          columns:
+            - column:
+                name: id
+                type: serial
+                autoIncrement: true
+                constraints:
+                addPrimaryKey: true
+                nullable: false
+          remarks: id cannot be null
+                     - column:
+                     name: user_name
+                     type: varchar
+                     constraints:
+                     nullable: false
+                     remarks: id cannot be null
+
+
