@@ -16,10 +16,24 @@
 <div id="navbar">
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="about.html">About</a>
-        <a href="clients.html">Clients</a>
-        <a href="topics.html">Topics</a>
-        <a href="contacts.html">Contacts</a>
+        <!--        <a th:href="@{/about}">About</a>-->
+        <!--        <a th:href="@{/clients}">Clients</a>-->
+        <!--        <a th:href="@{/topics}">Topics</a>-->
+        <!--        <a th:href="@{/contacts}">Contacts</a>-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                <a th:href="@{/about}">About</a></li>
+            <li class="nav-item" th:classappend="${module == 'clients' ? 'active' : ''}">
+                <a th:href="@{/clients}">Clients</a></li>
+            <li class="nav-item" th:classappend="${module == 'topics' ? 'active' : ''}">
+                <a th:href="@{/topics}">Topics</a></li>
+            <li class="nav-item" th:classappend="${module == 'contacts' ? 'active' : ''}">
+                <a th:href="@{/contacts}">Contacts</a></li>
+            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                <a class="nav-link" th:href="@{/about}">About</a>
+            </li>
+        </ul>
+
     </div>
     <a href="#default" id="logo">
         <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
@@ -31,9 +45,9 @@
                 <button type="submit" style="color: aliceblue;background-color: #818181">Submit</button>
             </form>
         </div>
-        <a href="artist.html">Artist</a>
-        <a href="join.html">Join</a>
-        <a class="active" href="login.html">Login</a>
+        <a th:href="@{/artist}">Artist</a>
+        <a th:href="@{/Join}">Join</a>
+        <a class="active" th:href="@{/login}">Login</a>
     </div>
 </div>
 <!--finish navbar-->
@@ -138,6 +152,7 @@
     <br>
     <br>
     <!--    finish carousel-->
+
     <!--start art table fck-->
     <div class="header" style=";padding:15px 15px 5px">
         <h1>Recent Arts</h1>

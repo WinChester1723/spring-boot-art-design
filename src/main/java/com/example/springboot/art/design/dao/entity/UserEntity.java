@@ -8,9 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 //@Entity
-@Table
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@Table
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class UserEntity {
 }
