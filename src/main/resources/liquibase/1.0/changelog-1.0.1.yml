@@ -8,17 +8,33 @@ databaseChangeLog:
           columns:
             - column:
                 name: id
-                type: serial
+                type: bigint
                 autoIncrement: true
                 constraints:
                 addPrimaryKey: true
                 nullable: false
-          remarks: id cannot be null
-                     - column:
-                     name: user_name
-                     type: varchar
-                     constraints:
-                     nullable: false
-                     remarks: id cannot be null
-
-
+            - column:
+                name: user_name
+                type: varchar
+                constraints:
+                nullable: false
+            - column:
+                name: user_surname
+                type: varchar
+                constraints:
+                nullable: false
+            - column:
+                name: user_age
+                type: int
+                constraints:
+                nullable: false
+            - column:
+                name: user_phone_number
+                type: varchar
+                constraints:
+                nullable: false
+            - column:
+                name: user_mail
+                type: varchar
+                constraints:
+                nullable: false
