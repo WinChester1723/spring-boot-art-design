@@ -16,19 +16,21 @@
 <div id="navbar">
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
-                <a th:href="@{/about}">About</a></li>
-            <li class="nav-item" th:classappend="${module == 'clients' ? 'active' : ''}">
-                <a th:href="@{/clients}">Clients</a></li>
-            <li class="nav-item" th:classappend="${module == 'topics' ? 'active' : ''}">
-                <a th:href="@{/topics}">Topics</a></li>
-            <li class="nav-item" th:classappend="${module == 'contacts' ? 'active' : ''}">
-                <a th:href="@{/contacts}">Contacts</a></li>
-            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
-                <a class="nav-link" th:href="@{/about}">About</a>
-            </li>
-        </ul>
+        <nav class="hover-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                    <a th:href="@{/about}">About</a></li>
+                <li class="nav-item" th:classappend="${module == 'clients' ? 'active' : ''}">
+                    <a th:href="@{/clients}">Clients</a></li>
+                <li class="nav-item" th:classappend="${module == 'topics' ? 'active' : ''}">
+                    <a th:href="@{/topics}">Topics</a></li>
+                <li class="nav-item" th:classappend="${module == 'contacts' ? 'active' : ''}">
+                    <a th:href="@{/contacts}">Contacts</a></li>
+                <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                    <a class="nav-link" th:href="@{/about}">About</a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <a href="#default" id="logo">
         <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
@@ -41,7 +43,7 @@
             </form>
         </div>
         <a th:href="@{/artist}">Artist</a>
-        <a th:href="@{/Join}">Join</a>
+        <a th:href="@{/join}">Join</a>
         <a class="active" th:href="@{/login}">Login</a>
     </div>
 </div>

@@ -20,20 +20,21 @@
         <!--        <a th:href="@{/clients}">Clients</a>-->
         <!--        <a th:href="@{/topics}">Topics</a>-->
         <!--        <a th:href="@{/contacts}">Contacts</a>-->
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
-                <a th:href="@{/about}">About</a></li>
-            <li class="nav-item" th:classappend="${module == 'clients' ? 'active' : ''}">
-                <a th:href="@{/clients}">Clients</a></li>
-            <li class="nav-item" th:classappend="${module == 'topics' ? 'active' : ''}">
-                <a th:href="@{/topics}">Topics</a></li>
-            <li class="nav-item" th:classappend="${module == 'contacts' ? 'active' : ''}">
-                <a th:href="@{/contacts}">Contacts</a></li>
-            <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
-                <a class="nav-link" th:href="@{/about}">About</a>
-            </li>
-        </ul>
-
+        <nav class="hover-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                    <a th:href="@{/about}">About</a></li>
+                <li class="nav-item" th:classappend="${module == 'clients' ? 'active' : ''}">
+                    <a th:href="@{/clients}">Clients</a></li>
+                <li class="nav-item" th:classappend="${module == 'topics' ? 'active' : ''}">
+                    <a th:href="@{/topics}">Topics</a></li>
+                <li class="nav-item" th:classappend="${module == 'contacts' ? 'active' : ''}">
+                    <a th:href="@{/contacts}">Contacts</a></li>
+                <li class="nav-item" th:classappend="${module == 'about' ? 'active' : ''}">
+                    <a class="nav-link" th:href="@{/about}">About</a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <a href="#default" id="logo">
         <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
@@ -46,7 +47,7 @@
             </form>
         </div>
         <a th:href="@{/artist}">Artist</a>
-        <a th:href="@{/Join}">Join</a>
+        <a th:href="@{/join}">Join</a>
         <a class="active" th:href="@{/login}">Login</a>
     </div>
 </div>
@@ -160,42 +161,193 @@
     <!-- Photo Grid -->
     <div class="row">
         <div class="column">
-            <img src="/images/arts/l-e-n-t-e-s-c-u-r-a-lilith-e-ssella-del-mattino.jpg" style="width:100%">
-            <img src="/images/arts/vladimir-manyukhin-storm.jpg" style="width:100%">
-            <img src="/images/arts/furio-tedeschi-deathmaskturquoise.jpg" style="width:100%">
-            <img src="/images/arts/sylvain-sarrailh-dddarkroomartstation.jpg" style="width:100%">
-            <img src="/images/arts/bao-songyuan-.jpg" style="width:100%">
-            <img src="/images/arts/andrej-z-t-november-4.jpg" style="width:100%">
-            <img src="/images/arts/linoir-art-malenia.jpg" style="width:100%">
-            <img src="/images/arts/rossdraws-dunek.jpg" style="width:100%">
-            <img src="/images/arts/rashed-alakroka-14s.jpg" style="width:100%">
+            <figure class="hover-img">
+                <img src="/images/arts/l-e-n-t-e-s-c-u-r-a-lilith-e-ssella-del-mattino.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+<!--            <img src="/images/arts/l-e-n-t-e-s-c-u-r-a-lilith-e-ssella-del-mattino.jpg" style="width:100%">-->
+            <figure class="hover-img">
+                <img src="/images/arts/vladimir-manyukhin-storm.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/furio-tedeschi-deathmaskturquoise.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/sylvain-sarrailh-dddarkroomartstation.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/bao-songyuan-.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/andrej-z-t-november-4.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/linoir-art-malenia.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/rossdraws-dunek.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/rashed-alakroka-14s.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
         </div>
         <div class="column">
-            <img src="/images/arts/jason-lan-yor-a.jpg" style="width:100%">
-            <img src="/images/arts/ari-ibarra-griffith.jpg" style="width:100%">
-            <img src="/images/arts/ari-ibarra-skull.jpg" style="width:100%">
-            <img src="/images/arts/cesar-correa-lopez-saitama-comp.jpg" style="width:100%">
-            <img src="/images/arts/erak-note-red-rain3.jpg" style="width:100%">
-            <img src="/images/arts/irene-yor-final-01.jpg" style="width:100%">
+            <figure class="hover-img">
+                <img src="/images/arts/jason-lan-yor-a.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/ari-ibarra-griffith.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/ari-ibarra-skull.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/cesar-correa-lopez-saitama-comp.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/erak-note-red-rain3.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/irene-yor-final-01.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
         </div>
         <div class="column">
-            <img src="/images/arts/ed-pantera-03.jpg" style="width:100%">
-            <img src="/images/arts/essukaa-yy.jpg" style="width:100%">
-            <img src="/images/arts/inhyuk-lee-2.jpg" style="width:100%">
-            <img src="/images/arts/jas-hoang-melina.jpg" style="width:100%">
-            <img src="/images/arts/igor-sid-lilith-c.jpg" style="width:100%">
-            <img src="/images/arts/santa-fung-cyberpunk2077.jpg" style="width:100%">
-            <img src="/images/arts/vladimir-manyukhin-storm.jpg" style="width:100%">
-            <img src="/images/arts/song-nan-li-dark-yasuo.jpg" style="width:100%">
+            <figure class="hover-img">
+                <img src="/images/arts/ed-pantera-03.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/essukaa-yy.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/inhyuk-lee-2.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/jas-hoang-melina.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/igor-sid-lilith-c.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/santa-fung-cyberpunk2077.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/vladimir-manyukhin-storm.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/song-nan-li-dark-yasuo.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
         </div>
         <div class="column">
-            <img src="/images/arts/noey-sirinya-1ren.jpg" style="width:100%">
-            <img src="/images/arts/zumi-draws-yor32.jpg" style="width:100%">
-            <img src="/images/arts/wonjo-jung-hex-steampunk-girlz-mai.jpg" style="width:100%">
-            <img src="/images/arts/wlop-cover-se.jpg" style="width:100%">
-            <img src="/images/arts/valentina-remenar-elven-prince-by-valentina-remenar.jpg" style="width:100%">
-            <img src="/images/arts/max-hay-render-july-9th-2022-edit-01.jpg" style="width:100%">
-            <img src="/images/arts/nivanh-chanthara-test-190.jpg" style="width:100%">
+            <figure class="hover-img">
+                <img src="/images/arts/noey-sirinya-1ren.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/zumi-draws-yor32.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/wonjo-jung-hex-steampunk-girlz-mai.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/wlop-cover-se.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/valentina-remenar-elven-prince-by-valentina-remenar.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/max-hay-render-july-9th-2022-edit-01.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
+            <figure class="hover-img">
+                <img src="/images/arts/nivanh-chanthara-test-190.jpg" style="width:100%">
+                <figcaption>
+                    <h3>Lorem <br/>Ipsum</h3>
+                </figcaption>
+            </figure>
         </div>
     </div>
 
