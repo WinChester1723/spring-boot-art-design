@@ -1,8 +1,6 @@
 package com.example.springboot.art.design.dao.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -29,8 +27,8 @@ public class UserEntity {
 
 //    tut dumayu sdelat manytomany
 //    sama db na onetoone ne srabotaet
-    @OneToOne
-    @MapsId
-    @JoinColumn(name = "id")
-    private UserSecurityEntity userSecurityEntity;
+//    @OneToOne
+//    @MapsId
+//    @JoinColumn(name = "id")
+//    private UserSecurityEntity userSecurityEntity;
 }
