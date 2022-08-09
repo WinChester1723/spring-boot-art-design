@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" th:href="@{../css/join_style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{../css/login_style.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -55,8 +55,30 @@
 <!--finish navbar-->
 
 <!--zdes nado sozdat logina kod-->
-<!--<div style="margin-top:110px;font-size:25px;margin-bottom:210px;color: aliceblue">-->
+<div style="margin-top:110px;font-size:25px;margin-bottom:210px;color: aliceblue">
 
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+    </div>
+
+</div>
 <!--i do suda-->
 <footer>
     <div class="social-links">
@@ -68,6 +90,6 @@
     <span>Art Design Blog Page</span>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" th:src="@{../js/join_func.js}"></script>
+<script type="text/javascript" th:src="@{../js/login_func.js}"></script>
 </body>
 </html>

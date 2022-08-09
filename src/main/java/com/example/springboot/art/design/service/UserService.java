@@ -36,20 +36,14 @@ public class UserService {
         return UserMapper.INSTANCE.entityToDto(userEntity);
     }
 //        zdes est kakayata oshibka i fiq poymi kak ee ispravit
-//    public List<UserDto> findByUser_name(String name) {
+//    public UserDto findByUser_name(String name) {
 //        var userEntity = userRepo.findByUser_name(name);
-//        var userDto = userEntity.stream()
-//                .map(UserMapper.INSTANCE::entityToDto)
-//                .collect(Collectors.toList());
-//        return userDto;
+//        return UserMapper.INSTANCE.entityToDto(userEntity);
 //    }
 //
-//    public List<UserSecurityDto> findByUser_nickname(String name) {
+//    public UserSecurityDto findByUser_nickname(String name) {
 //        var userSecurityEntity = userSecurityRepo.findByUser_nickname(name);
-//        var userSecurityDto = userSecurityEntity.stream()
-//                .map(UserSecurityMapper.INSTANCE::entityToDto)
-//                .collect(Collectors.toList());
-//        return userSecurityDto;
+//        return UserSecurityMapper.INSTANCE.entityToDto(userSecurityEntity);
 //    }
 
     public void createUser(UserDto userDto) {
